@@ -21,7 +21,7 @@ steps:
 - task: CopyFiles@2
   inputs:
    Contents: 'azuredeploy.json'
-   TargetFolder: '$(Build.ArtifactStagingDirectory)\Infra'
+   TargetFolder: '$(Build.ArtifactStagingDirectory)/Infra'
 
 - task: PublishBuildArtifacts@1
   inputs:
